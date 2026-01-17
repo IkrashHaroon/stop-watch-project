@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Premium Stopwatch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+
+  <div class="backdrop-blur-xl bg-white/10 p-10 rounded-2xl shadow-2xl w-80 text-center">
+    <h1 class="text-2xl font-semibold mb-6 tracking-wide">STOPWATCH</h1>
+
+    <!-- Time -->
+    <div id="display" class="text-4xl font-mono mb-8">
+      00:00:00
+    </div>
+
+    <div class="flex justify-between gap-3">
+      <button
+        onclick="startPause()"
+        id="startBtn"
+        class="flex-1 py-2 rounded-lg bg-green-500 hover:bg-green-600 transition font-medium"
+      >
+        Start
+      </button>
+
+      <button
+        onclick="resetWatch()"
+        class="flex-1 py-2 rounded-lg bg-red-500 hover:bg-red-600 transition font-medium"
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
